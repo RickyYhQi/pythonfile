@@ -48,6 +48,8 @@ result = d.make_file(text1, text2, 'your_output', 'standard_result', context=Tru
 with open("final_report.html", 'w') as resultfile:
     resultfile.write(result)
 os.system("cp final_report.html ../../../")
+os.system("cp tests.log ../../../")
+os.system("cp standard_result.log ../../../")
 os.chdir("../../../")
 print("Done !!!  \nPlease check final_report.html in current dir!! \ncompleting the second phase.")
 os.system("rm -rf COMP9024")
